@@ -1,8 +1,8 @@
-package com.podgoretsaya.calc.controller;
+package com.podgoretskaya.calc.controller;
 
 
-import com.podgoretsaya.calc.dto.OperationDTO;
-import com.podgoretsaya.calc.service.CalculateSimple;
+import com.podgoretskaya.calc.dto.OperationDTO;
+import com.podgoretskaya.calc.service.CalculateSimple;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

@@ -1,4 +1,4 @@
-package com.podgoretsaya.calc.dto;
+package com.podgoretskaya.calc.dto;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
