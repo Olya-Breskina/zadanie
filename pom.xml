@@ -8,7 +8,7 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.podgoretsaya</groupId>
+	<groupId>com.podgoretskaya</groupId>
 	<artifactId>calc</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>calc</name>
