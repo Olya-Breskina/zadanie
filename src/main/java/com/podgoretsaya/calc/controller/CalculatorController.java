@@ -1,4 +1,4 @@
-package com.podgoretsaya.calc.controllers;
+package com.podgoretsaya.calc.controller;
 
 
 import com.podgoretsaya.calc.dto.OperationDTO;
