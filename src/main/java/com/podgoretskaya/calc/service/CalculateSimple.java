@@ -8,11 +8,9 @@ import java.time.LocalDate;
 @Service
 public class CalculateSimple {
     public double multiply(OperationDTO model){
-
         return  (model.getAmountOfVacationDays() * model.getAverageForTheYear());
     }
    public LocalDate multiplyData(OperationDTO model){
         return  (model.getVacationStart().plusDays(model.getAmountOfVacationDays()) );
     }
-
 }
