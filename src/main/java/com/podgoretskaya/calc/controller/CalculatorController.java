@@ -22,16 +22,17 @@ public class CalculatorController {
     }
 
     @GetMapping("/calculator")
-    public ResponseEntity<String> getCalculatorPage(@RequestParam(required = false,name="qqq") String param, @RequestBody OperationDTO model) {
+    public ResponseEntity<String> getCalculatorPage(@RequestParam(required = false, name = "get") String param, @RequestBody OperationDTO model) {
         return new ResponseEntity("все работает", HttpStatus.OK);
     }
 
-   @PostMapping(value="/calculator")
-   public ResponseEntity<String> getCalculatorPages(@RequestBody OperationDTO model) {
-       return new ResponseEntity("amountOfVacationDays=" + model.getAmountOfVacationDays() +
-               ", averageForTheYear= " + model.getAverageForTheYear() +
-               ", vacationStart= " + model.getVacationStart() +
-               ", vacationEnd= " + model.getVacationStart().plusDays(model.getAmountOfVacationDays()) +
-               ", vacationPay= " + model.getAmountOfVacationDays() * model.getAverageForTheYear(),
-               HttpStatus.OK);}
+    @PostMapping(value = "/calculator")
+    public ResponseEntity<String> getCalculatorPages(@RequestBody OperationDTO model) {
+        return new ResponseEntity("amountOfVacationDays=" + model.getAmountOfVacationDays() +
+                ", averageForTheYear= " + model.getAverageForTheYear() +
+                ", vacationStart= " + model.getVacationStart() +
+                ", vacationEnd= " + calculateSimple.multiplyData(model) +
+                ", vacationPay= " + calculateSimple.multiply(model)
+                , HttpStatus.OK);
+    }
 }
